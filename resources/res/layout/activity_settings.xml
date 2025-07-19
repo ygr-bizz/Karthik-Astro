@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/header_all" android:textStyle="bold" android:textColor="#d81b60" android:gravity="center_horizontal" android:id="@+id/Settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/menu_item_settings"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView12" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Default_Language" android:layout_weight="1"/>
+                <Spinner android:id="@+id/spinner" android:layout_width="0dp" android:layout_height="match_parent" android:text="English" android:layout_weight="1"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Default_Place" android:layout_weight="1"/>
+                <EditText android:id="@+id/editText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Place_value" android:ems="10" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat" android:ems="4" android:layout_weight="1"/>
+                <EditText android:id="@+id/editText3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_dd" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_NS" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon" android:ems="4" android:layout_weight="1"/>
+                <EditText android:id="@+id/editText6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_dd" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_EW1" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz" android:ems="4" android:layout_weight="1"/>
+                <EditText android:id="@+id/editText9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_PM" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+                <EditText android:id="@+id/editText10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_hh" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc" android:ems="4" android:layout_weight="1"/>
+                <EditText android:id="@+id/editText12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_PM" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+                <EditText android:id="@+id/editText13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_hh" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+                <EditText android:id="@+id/editText14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/button" android:background="#e6e1e3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/Settings_Btn_Save"/>
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

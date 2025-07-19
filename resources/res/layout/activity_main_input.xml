@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffff" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/header_all" android:textStyle="bold" android:textColor="#d81b60" android:gravity="center_horizontal" android:id="@+id/textView" android:paddingTop="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/input_header"/>
+    <TableRow android:background="#0079d6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Client Details" android:ems="4" android:layout_weight="1"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@+id/edit_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Baskaran S/o Krishnan" android:hint="Client Name" android:maxLength="40" android:layout_weight="5" android:inputType="textPersonName"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@+id/Day" android:layout_width="0dp" android:layout_height="wrap_content" android:text="05" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/Mon" android:layout_width="0dp" android:layout_height="wrap_content" android:text="01" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/Year" android:layout_width="0dp" android:layout_height="wrap_content" android:text="1964" android:maxLength="4" android:layout_weight="2" android:inputType="number"/>
+            <EditText android:id="@+id/bHH" android:layout_width="0dp" android:layout_height="wrap_content" android:text="03" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/bMM" android:layout_width="0dp" android:layout_height="wrap_content" android:text="59" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/bSS" android:layout_width="0dp" android:layout_height="wrap_content" android:text="25" android:maxLength="3" android:layout_weight="1" android:inputType="number"/>
+            <Button android:id="@+id/btn_now" android:background="#dae8fc" android:layout_width="0dp" android:layout_height="match_parent" android:text="Now" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:background="#0079d6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Location Details" android:ems="4" android:layout_weight="1"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView21" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_Place" android:layout_weight="1"/>
+            <EditText android:id="@+id/editText1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="BodiNayakkanur,TamilNadu" android:layout_weight="4" android:inputType="textPersonName" android:textAllCaps="true"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/btn_place" android:background="#dae8fc" android:layout_width="0dp" android:layout_height="match_parent" android:drawableLeft="@android:drawable/ic_menu_search" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Lat" android:layout_weight="1"/>
+            <EditText android:id="@+id/latDD" android:layout_width="0dp" android:layout_height="wrap_content" android:text="10:01:N" android:maxLength="10" android:layout_weight="2" android:inputType="number"/>
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Lon" android:layout_weight="1"/>
+            <EditText android:id="@+id/lonDD" android:layout_width="0dp" android:layout_height="wrap_content" android:text="77:21:E" android:maxLength="10" android:layout_weight="2" android:textAllCaps="true"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="0dp" android:layout_height="wrap_content" android:text="TZone" android:layout_weight="1"/>
+            <EditText android:id="@+id/TzPM" android:layout_width="0dp" android:layout_height="wrap_content" android:text="+:05:30" android:maxLength="9" android:layout_weight="2" android:textAllCaps="true"/>
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tcor" android:layout_weight="1"/>
+            <EditText android:id="@+id/TcPM" android:layout_width="0dp" android:layout_height="wrap_content" android:text="+:00:00" android:maxLength="8" android:layout_weight="2" android:textAllCaps="true"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:background="#0079d6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:text="RP Date / Time" android:ems="4" android:layout_weight="1"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:id="@+id/RP_Day" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_date_day" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/RP_Mon" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_date_month" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/RP_Year" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_date_year" android:maxLength="4" android:layout_weight="2" android:inputType="number"/>
+            <EditText android:id="@+id/RP_bHH" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_time_hh" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/RP_bMM" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_time_mm" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/RP_bSS" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/input_time_ss" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <Button android:id="@+id/btn_RP" android:background="#dae8fc" android:layout_width="0dp" android:layout_height="match_parent" android:text="Now" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/btn_run" android:background="#dae8fc" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/btn_Run" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saved Data" android:ems="4" android:layout_weight="1"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/button6" android:background="#dae8fc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/btn_open" android:layout_weight="1" android:elevation="2dp"/>
+            <Button android:id="@+id/btn_save" android:background="#dae8fc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/btn_Save" android:layout_weight="1" android:elevation="2dp"/>
+            <Button android:id="@+id/btn_help" android:background="#dae8fc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/btn_Help" android:layout_weight="1" android:elevation="2dp"/>
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>

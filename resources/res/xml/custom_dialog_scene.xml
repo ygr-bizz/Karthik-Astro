@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Transition app:constraintSetEnd="@+id/end" app:constraintSetStart="@+id/start" app:duration="1000">
+        <KeyFrameSet/>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/MainKey" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_editor_absoluteX="178dp" app:layout_editor_absoluteY="279dp"/>
+        <Constraint android:id="@+id/texttitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_editor_absoluteX="41dp" app:layout_editor_absoluteY="28dp"/>
+        <Constraint android:id="@+id/btnCopy" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_editor_absoluteX="17dp" app:layout_editor_absoluteY="187dp"/>
+        <Constraint android:id="@+id/buttonCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_editor_absoluteX="141dp" app:layout_editor_absoluteY="187dp"/>
+        <Constraint android:id="@+id/buttonSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_editor_absoluteX="265dp" app:layout_editor_absoluteY="187dp"/>
+        <Constraint android:id="@+id/edt_comment" android:layout_width="282dp" android:layout_height="64dp" app:layout_editor_absoluteX="41dp" app:layout_editor_absoluteY="99dp"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end"/>
+</MotionScene>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleTextColor="@color/colorPrimaryDark">
+        <TextView android:textSize="20sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/toolbar_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tab_header" android:textAllCaps="false"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Data" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rasi" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cusp" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sig" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dasa" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L.Dasa" android:layout_weight="1"/>
+            <TextView android:textColor="@color/text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trans" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TabHost android:id="@+id/TabHost1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TabWidget android:id="@android:id/tabs" android:background="#e6e1e3" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="38dp"/>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ScrollView android:id="@+id/scrollviewdata" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/thirukural" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/ruling_planets"/>
+                        <TableLayout android:id="@+id/TableLayout_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*" android:layout_centerHorizontal="true"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/ruling_planets_title"/>
+                        <TextView android:textStyle="normal" android:textColor="@color/text_title" android:gravity="left" android:id="@+id/txtrpdata" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/rp_date_time_title"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_RP" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchColumns="*" android:singleLine="true"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:id="@+id/scrollviewCuspal" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/cuspal_chart_details_title"/>
+                        <TableLayout android:id="@+id/TableLayout_Cuspal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:text="@string/current_dasa_bhu_ant_details_title"/>
+                        <TableLayout android:id="@+id/TableLayout_current_dasa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:text="Aspect and Conjection"/>
+                        <TableLayout android:id="@+id/TableLayout_Aspect_Conj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:id="@+id/ScrollViewAllScores" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/planet_details_title"/>
+                        <TableLayout android:id="@+id/TableLayout_AllScores" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:stretchColumns="*"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/planet_significator_details_title"/>
+                        <TableLayout android:id="@+id/TableLayout_AllScores_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:stretchColumns="*"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cuspal InterLink Significator"/>
+                        <TableLayout android:id="@+id/TableLayout_AllScores_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:stretchColumns="*"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:id="@+id/ScrollViewFriendScores" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_FriendScores" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vimsottri_dasa_details_title"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/maha_dasa_title"/>
+                        <TableLayout android:id="@+id/TableLayout_FriendScores" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                        <TableLayout android:id="@+id/TableLayout_Bhuti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                        <TableLayout android:id="@+id/TableLayout_Ant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                        <TableLayout android:id="@+id/TableLayout_Soo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:scrollbarStyle="outsideInset" android:id="@+id/ScrollViewLagnadasa" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/txt_dasa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ruling_planets_title"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/scroll_layout" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/txt_navamsa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/navamsa_details_title_b"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/Navamsa" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:id="@+id/ScrollLdasa" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Lagna Dasa" android:textAlignment="center"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_LD" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_LD_sub" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchColumns="*"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_LD_ssb" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchColumns="*"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Lagna Dasa Transit" android:textAlignment="center"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_Transit" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchColumns="*"/>
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView android:id="@+id/ScrollTransitChart" android:background="#ffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Baskara Transit Chart" android:textAlignment="center"/>
+                        <TableLayout android:orientation="vertical" android:id="@+id/TableLayout_Transit_chart" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:stretchColumns="*"/>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

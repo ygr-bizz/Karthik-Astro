@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <TextView android:textSize="18dp" android:textColor="#000000" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Sign up"/>
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/airbnb_logo"/>
+    <TextView android:textSize="28dp" android:textColor="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Welcome"/>
+    <TextView android:textSize="18dp" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Login in to Continue"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="20dp" android:layout_weight="1">
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="baalaji.rajan@gmail.com"/>
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="*********"/>
+        <TextView android:textColor="#000000" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Forget Password?"/>
+        <Button android:textSize="15dp" android:textColor="#ffffff" android:background="#ff3f59" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="Log in" android:textAllCaps="false"/>
+        <Button android:textSize="15dp" android:textColor="#000000" android:background="#eceff5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Continue with Facebook" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

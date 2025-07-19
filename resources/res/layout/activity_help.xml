@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/header_all" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center_horizontal" android:id="@+id/help_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/help_header"/>
+    <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/help_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView"/>
+            </LinearLayout>
+        </ScrollView>
+    </TableRow>
+</LinearLayout>

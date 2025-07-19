@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="23sp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Stored Customer Details"/>
+        <ListView android:id="@+id/placeslist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="13sp" android:textStyle="normal|bold|italic" android:gravity="left" android:id="@+id/txtresulttext" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:text="" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

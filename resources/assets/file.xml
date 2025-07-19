@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<!--
+  ~ /**
+  ~  * Created by Balaji Rajan on 16/7/20 12:19 AM
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 9/7/20 10:57 PM
+  ~  */
+  -->
+
+<Chart>
+  <client>
+      <id>1</id>
+      <Name>Balaji</Name>
+      <bdate>21</bdate>
+      <bmonth>05</bmonth>
+      <byear>1980</byear>
+      <bhh>17</bhh>
+      <bmm>00</bmm>
+      <bss>00</bss>
+      <place>Pondicherry</place>
+      <latdd>11</latdd>
+      <latmm>59</latmm>
+      <latNS>N</latNS>
+      <londd>79</londd>
+      <lonmm>59</lonmm>
+      <lonEW>E</lonEW>
+  </client>
+    <client>
+        <id>2</id>
+        <Name>Stella</Name>
+        <bdate>07</bdate>
+        <bmonth>03</bmonth>
+        <byear>1993</byear>
+        <bhh>19</bhh>
+        <bmm>00</bmm>
+        <bss>00</bss>
+        <place>Chennai</place>
+        <latdd>13</latdd>
+        <latmm>05</latmm>
+        <latNS>N</latNS>
+        <londd>80</londd>
+        <lonmm>05</lonmm>
+        <lonEW>E</lonEW>
+    </client>
+</Chart>
+

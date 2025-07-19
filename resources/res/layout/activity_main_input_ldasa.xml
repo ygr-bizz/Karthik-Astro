@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffff" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/header_all" android:textStyle="bold" android:textColor="#79d134" android:gravity="center_horizontal" android:id="@+id/textView" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/input_header"/>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_name" android:layout_weight="1"/>
+            <EditText android:id="@+id/edit_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_name_value" android:ems="10" android:maxLength="20" android:layout_weight="1" android:inputType="textPersonName"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_date" android:ems="3" android:layout_weight="1"/>
+            <EditText android:id="@+id/Day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_date_day" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/Mon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_date_month" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/Year" android:layout_width="83dp" android:layout_height="wrap_content" android:text="@string/input_date_year" android:ems="6" android:maxLength="4" android:layout_weight="1" android:inputType="number"/>
+            <Button android:id="@+id/btn_now" android:background="@color/secondary" android:layout_width="50dp" android:layout_height="match_parent" android:text="N"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_time" android:ems="3" android:layout_weight="1"/>
+            <EditText android:id="@+id/bHH" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_time_hh" android:ems="4" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/bMM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_time_mm" android:ems="4" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/bSS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_time_ss" android:ems="6" android:layout_weight="1" android:inputType="number"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:id="@+id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Place" android:layout_weight="1"/>
+            <EditText android:id="@+id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Place_value" android:ems="10" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat" android:ems="4" android:layout_weight="1"/>
+            <EditText android:id="@+id/latDD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_dd" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/latMM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/latNS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lat_NS" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon" android:ems="4" android:layout_weight="1"/>
+            <EditText android:id="@+id/lonDD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_dd" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/lonMM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/latEW" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Lon_EW1" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz" android:ems="4" android:layout_weight="1"/>
+            <EditText android:id="@+id/TzPM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_PM" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+            <EditText android:id="@+id/TzHH" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_hh" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/TzMM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tz_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/body_all" android:textStyle="bold" android:textColor="#545253" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc" android:ems="4" android:layout_weight="1"/>
+            <EditText android:id="@+id/TcPM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_PM" android:ems="4" android:maxLength="1" android:layout_weight="1" android:inputType="textPersonName" android:textAllCaps="true"/>
+            <EditText android:id="@+id/TcHH" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_hh" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+            <EditText android:id="@+id/TcMM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_Tc_mm" android:ems="4" android:maxLength="2" android:layout_weight="1" android:inputType="number"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/btn_run" android:background="#ffb800" android:layout_width="323dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/btn_Run" android:layout_weight="1"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableRow>
+</LinearLayout>
